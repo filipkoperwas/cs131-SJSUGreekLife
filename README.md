@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to start the server
 
-Things you may want to cover:
+Once you have cloned the repository, create a db file with the command:
+rake db:create
 
-* Ruby version
+Afterwards, to start the server, use the command:
+rails server
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can then visit http://localhost:3000 to view the website
