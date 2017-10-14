@@ -1,5 +1,15 @@
 # README
 
+### Project 12 ###
+
+# Filip Koperwas #
+# Sandro Sallenbach #
+# Tim Kim #
+# Garrison Wong #
+
+
+
+
 ## How to start the server
 
 Once you have cloned the repository, create a db file with the command:
