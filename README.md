@@ -4,7 +4,7 @@
 ```
 Filip Koperwas
 Sandro Sallenbach
-Tim Kim
+Tim Kim (timdaking)
 Garrison Wong
 ```
 ------------------
