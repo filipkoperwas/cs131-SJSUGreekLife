@@ -159,3 +159,101 @@ Processing by HomePageController#index as HTML
 Completed 200 OK in 14ms (Views: 12.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:50 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:50 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:51 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:51 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:52 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:39:53 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:28 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 228ms (Views: 226.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:29 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:31 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:42 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:43 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:43:43 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:48:19 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-15 19:48:39 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.6ms)
+
+
