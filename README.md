@@ -2,7 +2,7 @@
 
 ## Project 12
 ```
-Filip Koperwas
+Filip Koperwas (filipkoperwas)
 Sandro Sallenbach (SandroSal)
 Tim Kim (timdaking)
 Garrison Wong
