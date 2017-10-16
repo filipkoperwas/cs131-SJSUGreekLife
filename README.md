@@ -2,10 +2,11 @@
 
 ## Project 12
 ```
-Filip Koperwas
-Sandro Sallenbach
+Filip Koperwas (filipkoperwas)
+Sandro Sallenbach (SandroSal)
 Tim Kim (timdaking)
 Garrison Wong
+
 ```
 ------------------
 
@@ -16,6 +17,7 @@ Once you have cloned the repository, create a db file with the command:
 rake db:create
 
 Afterwards, to start the server, use the command:
+
 rails server
 
-You can then visit http://localhost:3000 to view the website
+You can then visit http://localhost:3000 to view the website.
