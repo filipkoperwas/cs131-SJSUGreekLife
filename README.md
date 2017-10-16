@@ -1,12 +1,12 @@
 # README
 
 ## Project 12
-'''
+```
 Filip Koperwas
 Sandro Sallenbach
 Tim Kim
 Garrison Wong
-'''
+```
 ------------------
 
 
