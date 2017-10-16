@@ -3,7 +3,7 @@
 ## Project 12
 ```
 Filip Koperwas
-Sandro Sallenbach
+Sandro Sallenbach (SandroSal)
 Tim Kim (timdaking)
 Garrison Wong
 
