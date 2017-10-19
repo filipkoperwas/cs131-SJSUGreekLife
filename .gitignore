@@ -12,4 +12,21 @@ tmp/.DS_Store
 app/.DS_Store
 app/views/.DS_Store
 app/.DS_Store
-/tmp
+
+#ignore bundler config
+/.bundle
+
+#ignore the default SQLite database
+/db/*.sqlite3
+/db/*.dqlite3-journal
+
+# ignore all logfiles and tempfiles
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
+
+.byebug_history
