@@ -862,3 +862,39 @@ ActionView::Template::Error (The asset "Background.jpg" is not present in the as
     44:   </body>
   
 app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__1950687770_43486460'
+Started GET "/" for 127.0.0.1 at 2017-10-19 17:38:28 -0700
+Processing by HomePageController#index as HTML
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 2520ms
+
+
+  
+ActionView::Template::Error (Current ExecJS runtime does't support ES5. Please install node.js.):
+    4:     <title>CMPE131-Sjsugreeklife</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <meta charset="utf-8">
+   10:  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__963500785_40226136'
+Started GET "/calendar/index" for 127.0.0.1 at 2017-10-19 17:41:01 -0700
+Processing by CalendarController#index as HTML
+  Rendering calendar/index.html.erb within layouts/application
+  Rendered calendar/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 1121ms
+
+
+  
+ActionView::Template::Error (Current ExecJS runtime does't support ES5. Please install node.js.):
+    4:     <title>CMPE131-Sjsugreeklife</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <meta charset="utf-8">
+   10:  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__892577582_38794644'
