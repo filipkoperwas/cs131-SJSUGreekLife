@@ -11,8 +11,9 @@
     Club.create([{name:"test", layout:'1'}])
     club1 = Club.find_by_name("test")
     p "Found club #{club1.name}"
-    Description.create(name:"test", content:"This is a test description.", club: club1)
+    Description.create(name:"test", content:"This is a test description, hello.", club: Club.find_by_name("test"))
     p "Added description to #{club1.name}"
-
+    Picture.create(name:"testPic", pic:"Background.jpg", club: Club.find_by_name("test"))
+    p "Added picture to #{Club.find_by_name("test").name}"
     p "Created #{Club.count} clubs"
 
