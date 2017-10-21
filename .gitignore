@@ -23,6 +23,8 @@ app/.DS_Store
 # ignore all logfiles and tempfiles
 /log/*
 /tmp/*
+*.cache
+/tmp/cache/*
 !/log/.keep
 !/tmp/.keep
 
@@ -30,3 +32,5 @@ app/.DS_Store
 /yarn-error.log
 
 .byebug_history
+
+*.swp

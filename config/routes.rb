@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'club_page/index'
+
+  get 'club_page/show'
+
   get 'calendar/index'
 
   get 'home_page/index'

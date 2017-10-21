@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+    Club.destroy_all
+
+    Club.create([{name:"test", layout:'1'}])
+    club1 = Club.find_by_name("test")
+    p "Found club #{club1.name}"
+    Description.create(name:"test", content:"This is a test description.", club: club1)
+    p "Added description to #{club1.name}"
+
+    p "Created #{Club.count} clubs"
+
