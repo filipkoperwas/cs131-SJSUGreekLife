@@ -1,0 +1,2 @@
+module ClubPageHelper
+end
