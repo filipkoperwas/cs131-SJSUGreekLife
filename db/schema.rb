@@ -10,25 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20171019234009) do
+ActiveRecord::Schema.define(version: 20171021081225) do
 
   create_table "calendars", force: :cascade do |t|
     t.string "name"
     t.float "latitude"
     t.float "longitude"
-=======
-ActiveRecord::Schema.define(version: 20171021081225) do
-
-  create_table "clubs", force: :cascade do |t|
-    t.string "name"
-    t.integer "layout"
->>>>>>> ClubPage
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
+  create_table "clubs", force: :cascade do |t|
+    t.string "name"
+    t.integer "layout"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "descriptions", force: :cascade do |t|
+    t.string "name"
+    t.text "content"
+    t.integer "club_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["club_id"], name: "index_descriptions_on_club_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "Calendar"
     t.string "Club"
@@ -44,14 +51,6 @@ ActiveRecord::Schema.define(version: 20171021081225) do
     t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-=======
-  create_table "descriptions", force: :cascade do |t|
-    t.string "name"
-    t.text "content"
-    t.integer "club_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["club_id"], name: "index_descriptions_on_club_id"
   end
 
   create_table "pictures", force: :cascade do |t|
@@ -61,7 +60,6 @@ ActiveRecord::Schema.define(version: 20171021081225) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["club_id"], name: "index_pictures_on_club_id"
->>>>>>> ClubPage
   end
 
 end

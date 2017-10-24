@@ -33,3 +33,4 @@ app/.DS_Store
 .byebug_history
 
 *.swp
+*.orig

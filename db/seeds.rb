@@ -13,7 +13,7 @@
     p "Found club #{club1.name}"
     Description.create(name:"test", content:"This is a test description, hello.", club: Club.find_by_name("test"))
     p "Added description to #{club1.name}"
-    Picture.create(name:"testPic", pic:"Background.jpg", club: Club.find_by_name("test"))
+    Picture.create(name:"testPic", pic:"testPic.png", club: Club.find_by_name("test"))
     p "Added picture to #{Club.find_by_name("test").name}"
     p "Created #{Club.count} clubs"
 
