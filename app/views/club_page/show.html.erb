@@ -1,5 +1,11 @@
-<p><%= @club1.name %></p>
-<br>
-<p><%= @club1.descriptions.first.content %></p>
-
-<%= image_tag @club1.pictures.find_by_name("testPic").pic %>
+<html>
+    <div id="logo">
+        <%= image_tag @club.pictures.find_by_name("logo").pic %>
+    </div>
+    <div id="club name">
+        <h1><%= @club.name %></h1>
+    </div>
+    <div id="mission statement">
+        <p><%= @club.descriptions.find_by_name("mission_statement").content %></p>
+    </div>
+</html>

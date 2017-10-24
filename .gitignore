@@ -12,7 +12,6 @@ tmp/.DS_Store
 app/.DS_Store
 app/views/.DS_Store
 app/.DS_Store
-**/.DS_Store
 
 #ignore bundler config
 /.bundle
@@ -35,7 +34,3 @@ app/.DS_Store
 
 *.swp
 *.orig
-app/.DS_Store
-app/views/.DS_Store
-app/.DS_Store
-app/views/.DS_Store
