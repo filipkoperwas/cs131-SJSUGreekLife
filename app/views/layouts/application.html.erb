@@ -11,6 +11,11 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBesTbKA79TfyYcneutwPSCZ610yp0PUhQ&callback=initMap"
+  type="text/javascript"></script>  
+	<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>  
+	<script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>
+	<script src='//underscorejs.org/underscore-min.js' type='text/javascript'></script>
   </head>
 
   <body>
@@ -41,7 +46,7 @@
         	</ul>
       		</li>
 		  <li class=""><%= link_to 'Maps', maps_path %>
-	      <li class=""><%= link_to 'Event Calendar', calendar_path %>
+	      <li><a href="#">Event Calendar</a></li>
 	      <li><a href="#">About</a></li>
 	    </ul>
 	  </div>
