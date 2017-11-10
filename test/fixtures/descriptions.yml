@@ -7,3 +7,15 @@ one:
 two:
   name: MyString
   content: MyText
+
+aep_mission_statement:
+  name: mission_statement
+  content: We are AEP, this is our mission statement
+
+asp_mission_statement:
+  name: mission_statement
+  content: We are ASP, this is our mission statement
+
+ato_mission_statement:
+  name: mission_statement
+  content: We are ATO, this is our mission statement
