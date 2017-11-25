@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171021081225) do
+ActiveRecord::Schema.define(version: 20171021001903) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "calendars", force: :cascade do |t|
     t.string "name"
@@ -23,17 +26,10 @@ ActiveRecord::Schema.define(version: 20171021081225) do
   create_table "clubs", force: :cascade do |t|
     t.string "name"
     t.integer "layout"
+    t.text "description"
+    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "descriptions", force: :cascade do |t|
-    t.string "name"
-    t.text "content"
-    t.integer "club_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["club_id"], name: "index_descriptions_on_club_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -51,15 +47,6 @@ ActiveRecord::Schema.define(version: 20171021081225) do
     t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "pictures", force: :cascade do |t|
-    t.string "name"
-    t.string "pic"
-    t.integer "club_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["club_id"], name: "index_pictures_on_club_id"
   end
 
 end

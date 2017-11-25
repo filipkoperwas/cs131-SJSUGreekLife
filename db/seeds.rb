@@ -6,23 +6,27 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    Club.destroy_all
-    Picture.destroy_all
-    Description.destroy_all
 
-    #First club
-    Club.create([{name:"Alpha Epsilon Pi", layout:'1'}])
-    Description.create(name:"mission_statement", content:"Alpha Epsilon Pi, otherwise referred to as ‘A E Pi’, was founded in 1913 at New York University by Charles C. Moskowitz and 10 other Jewish men. The chapter here at SJSU, was founded in 2013 and is one of our 18 chapters with a chapter facility located on 10th street. Alpha Epsilon Pi aspires to encourage the Jewish student to remain dedicated to Jewish ideals, values, and ethics and to prepare the student to be one of tomorrow's leaders so that he may help himself, his family, his community, and his people.", club: Club.find_by_name("Alpha Epsilon Pi"))
-    Picture.create(name:"logo", pic:"aepi_logo.png", club: Club.find_by_name("Alpha Epsilon Pi"))
+#First club
+Club.create(
+  name:"Alpha Epsilon Pi",
+  layout:'1',
+  description: "Alpha Epsilon Pi, otherwise referred to as ‘A E Pi’, was founded in 1913 at New York University by Charles C. Moskowitz and 10 other Jewish men. The chapter here at SJSU, was founded in 2013 and is one of our 18 chapters with a chapter facility located on 10th street. Alpha Epsilon Pi aspires to encourage the Jewish student to remain dedicated to Jewish ideals, values, and ethics and to prepare the student to be one of tomorrow's leaders so that he may help himself, his family, his community, and his people.",
+  picture: "aepi_logo.png",
+)
 
-    #2nd Club
-    Club.create([{name:"Alpha Sigma Phi", layout:'1'}])
-    Description.create(name:"mission_statement", content:"Alpha Sigma Phi was founded on December 6, 1845 by three men with a purpose at Yale University. That purpose was “To Better The Man.” Each year Alpha Sigma Phi recruits new men with the goal of helping them reach their fullest potential by using its five virtues: Purity, Honor, Charity, Silence, and Patriotism. Alpha Sigma Phi was founded at SJSU in the fall of 2013, and continues to strive for their mission of being the co-curricular organization of choice. Those who join Alpha Sigma Phi will find not just friends, but brothers for life. Its members vehemently endeavor to help each other grow and mature not just in academics but in every possible sense.", club: Club.find_by_name("Alpha Sigma Phi"))
-    Picture.create(name:"logo", pic:"asp_logo.png", club: Club.find_by_name("Alpha Sigma Phi"))
 
-    Club.create([{name:"Alpha Tau Omega", layout:'1'}])
-    Description.create(name:"mission_statement", content:"Alpha Tau Omega referred to as ‘A T O’, was founded in 1865 in Lexington, Virginia at the Virginia Military Institute. At SJSU, Alpha Tau Omega started as a different organization in 1926 and later affiliated with Alpha Tau Omega in 1950. Alpha Tau Omega is known as “America’s Leadership Development Fraternity”, and strives to instill leadership skills in all of their members. ATO provides a great opportunity for young men who are looking for a truly unique fraternity experience.", club: Club.find_by_name("Alpha Tau Omega"))
-    Picture.create(name:"logo", pic:"ato_logo.png", club: Club.find_by_name("Alpha Tau Omega"))
+#2nd Club
+Club.create(
+  name:"Alpha Sigma Phi",
+  layout:'1',
+  description: "Alpha Sigma Phi was founded on December 6, 1845 by three men with a purpose at Yale University. That purpose was “To Better The Man.” Each year Alpha Sigma Phi recruits new men with the goal of helping them reach their fullest potential by using its five virtues: Purity, Honor, Charity, Silence, and Patriotism. Alpha Sigma Phi was founded at SJSU in the fall of 2013, and continues to strive for their mission of being the co-curricular organization of choice. Those who join Alpha Sigma Phi will find not just friends, but brothers for life. Its members vehemently endeavor to help each other grow and mature not just in academics but in every possible sense.", 
+  picture: "asp_logo.png"
+)
 
-    p "Created #{Club.count} clubs"
-
+Club.create(
+  name:"Alpha Tau Omega",
+  layout:'1',
+  description: "Alpha Tau Omega referred to as ‘A T O’, was founded in 1865 in Lexington, Virginia at the Virginia Military Institute. At SJSU, Alpha Tau Omega started as a different organization in 1926 and later affiliated with Alpha Tau Omega in 1950. Alpha Tau Omega is known as “America’s Leadership Development Fraternity”, and strives to instill leadership skills in all of their members. ATO provides a great opportunity for young men who are looking for a truly unique fraternity experience.",
+  picture: "ato_logo.png",
+)
