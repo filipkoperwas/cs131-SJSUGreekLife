@@ -59,5 +59,3 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 
 #gem for paperclip
 gem "paperclip", "~> 5.0.0"
-
-
