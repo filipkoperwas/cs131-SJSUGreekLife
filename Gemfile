@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bcrypt'
 gem 'coffee-rails', '~> 4.2'
 gem 'gmaps4rails'
 gem 'jbuilder', '~> 2.5'
@@ -27,6 +28,7 @@ end
 
 group :development do
   gem 'annotate'
+  gem 'chromedriver-helper'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

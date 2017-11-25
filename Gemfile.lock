@@ -43,9 +43,14 @@ GEM
     annotate (2.7.2)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
     arel (8.0.0)
     autoprefixer-rails (7.1.6)
       execjs
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x64-mingw32)
+    bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
     bootstrap (4.0.0.beta2.1)
       autoprefixer-rails (>= 6.0.3)
@@ -62,6 +67,9 @@ GEM
       xpath (~> 2.0)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.1.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -89,6 +97,7 @@ GEM
     gmaps4rails (2.1.2)
     i18n (0.9.0)
       concurrent-ruby (~> 1.0)
+    io-like (0.3.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -218,9 +227,11 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bcrypt
   bootstrap (~> 4.0.0.alpha6)
   byebug
   capybara (~> 2.13)
+  chromedriver-helper
   coffee-rails (~> 4.2)
   factory_bot_rails
   gmaps4rails
