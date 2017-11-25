@@ -2,16 +2,16 @@ require 'test_helper'
 
 class CalendarsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @calendar = calendars(:one)
+    @calendar = FactoryBot.create(:calendar)
   end
 
   test "should get index" do
-    get calendars_url
+    get calendars_path(format: :json)
     assert_response :success
   end
 
   test "should get new" do
-    get new_calendar_url
+    get new_calendar_path(format: :json)
     assert_response :success
   end
 
@@ -24,12 +24,12 @@ class CalendarsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should show calendar" do
-    get calendar_url(@calendar)
+    get calendar_path(@calendar, format: :json)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_calendar_url(@calendar)
+    get edit_calendar_path(@calendar, format: :json)
     assert_response :success
   end
 
