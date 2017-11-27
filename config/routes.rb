@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :maps
   resources :calendars
   resources :events
+  resources :clubs
 
   get 'home_page/index'
   get 'club_page/index'

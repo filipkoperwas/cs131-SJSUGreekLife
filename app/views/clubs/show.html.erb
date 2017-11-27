@@ -1,0 +1,15 @@
+<div id="logo">
+  <%# image_tag @club.picture %>
+</div>
+<div id="club name">
+  <h1><%= @club.name %></h1>
+</div>
+<div id="mission statement">
+  <p><%= @club.description %></p>
+</div>
+<div id="edit button">
+  <% if current_user && current_user.acc_type == "club officer" %>
+    <%= link_to "Edit", edit_club_path(@club)  %>
+  <% end %>
+
+</div>

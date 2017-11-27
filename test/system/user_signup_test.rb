@@ -10,6 +10,7 @@ class UserSignupTest < ApplicationSystemTestCase
      fill_in "Password", with: "Password1"
      click_on "Sign In"
 
+     assert_equal "club officer", user.acc_type
      assert_text "Welcome, #{user.first_name}"
    end
 

@@ -1,0 +1,15 @@
+Edit <%= @club.name %>
+
+<%= form_for @club do |f|  %>
+  <%= f.label :name, "Club Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :picture, "Club Logo" %>
+  <%= f.text_field :picture %>
+
+  <%= f.label :description, "Mission Statement" %>
+  <%= f.text_field :description %>
+
+  <%= f.submit "Save" %>
+  
+<% end %>

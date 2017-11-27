@@ -30,3 +30,13 @@ Club.create(
   description: "Alpha Tau Omega referred to as ‘A T O’, was founded in 1865 in Lexington, Virginia at the Virginia Military Institute. At SJSU, Alpha Tau Omega started as a different organization in 1926 and later affiliated with Alpha Tau Omega in 1950. Alpha Tau Omega is known as “America’s Leadership Development Fraternity”, and strives to instill leadership skills in all of their members. ATO provides a great opportunity for young men who are looking for a truly unique fraternity experience.",
   picture: "ato_logo.png",
 )
+
+User.create(
+  first_name: "Bob",
+  last_name: "Dylan",
+  password: "Password1",
+  acc_type: "club officer",
+  email: "bobbylan1@example.com"
+)
+
+
