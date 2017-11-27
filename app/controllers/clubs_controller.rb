@@ -12,8 +12,8 @@ class ClubsController < ApplicationController
 
   def update
     @club = Club.find_by(id: params[:id])
-
     if @club.update(club_params)
+      @club.images.attach(params[:club][:images])
       redirect_to club_path(@club)
     else
       render :edit

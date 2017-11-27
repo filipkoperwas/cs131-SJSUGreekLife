@@ -10,6 +10,8 @@ Edit <%= @club.name %>
   <%= f.label :description, "Mission Statement" %>
   <%= f.text_field :description %>
 
+  <%= f.file_field :images, multiple: true %><br>
+
   <%= f.submit "Save" %>
   
 <% end %>
