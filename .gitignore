@@ -35,4 +35,4 @@ app/.DS_Store
 *.swp
 *.orig
 
-/storage/*
+storage/*

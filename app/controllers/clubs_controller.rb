@@ -4,6 +4,11 @@ class ClubsController < ApplicationController
 
   def show
     @club = Club.find_by(id: params[:id])
+    if (@club.layout == 1)
+      render :layout1
+    else
+      render :layout1
+    end
   end
 
   def edit

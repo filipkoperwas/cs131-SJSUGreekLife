@@ -1,0 +1,55 @@
+<style type="text/css" media="all">
+  p {
+    font-size: 1em;
+    color: rgb(0,0,0);
+  }
+  p.center {
+    text-align: center;
+  }
+  p.right {
+    text-align: right;
+  }
+  p.left {
+    text-align: left;
+  }
+
+  .column {
+    float: left;
+    width: 50.00%;
+    padding: 15px;
+  }
+  .row:after {
+    content: ""
+    display: table;
+    clear: both;
+</style>
+
+<div id="logo">
+  <% if @club.images.first %>
+    <%= image_tag @club.images.first %>
+  <% end %>
+</div>
+<div id="club_name">
+     <h1><%= @club.name %></h1>
+</div>
+<div id="mission statement">
+  <p class="center"><%= @club.description %></p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <p><%= @club.description %></p>
+    <% if @club.images.first %>
+      <%= image_tag @club.images.first %>
+    <% end %>
+  </div>
+  <div class="column">
+    <p><%= @club.description %></p>
+  </div>
+</div>
+<div id="edit button">
+  <% if current_user && current_user.acc_type == "club officer" %>
+    <%= link_to "Edit", edit_club_path(@club)  %>
+  <% end %>
+
+</div>
