@@ -13,7 +13,14 @@ class ClubsController < ApplicationController
   def update
     @club = Club.find_by(id: params[:id])
     if @club.update(club_params)
-      @club.images.attach(params[:club][:images])
+      if params[:club][:images] != nil
+        @club.images.attach(params[:club][:images])
+      else
+        image = @club.images.first
+        if image
+          image.purge
+        end
+      end
       redirect_to club_path(@club)
     else
       render :edit
@@ -23,4 +30,11 @@ class ClubsController < ApplicationController
   def club_params
     params.require(:club).permit(:name, :picture, :description)
   end
+
+  def myFunc(image)
+    if image
+      image.purge
+    end
+  end
+
 end

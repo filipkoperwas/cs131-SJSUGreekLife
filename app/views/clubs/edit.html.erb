@@ -13,5 +13,11 @@ Edit <%= @club.name %>
   <%= f.file_field :images, multiple: true %><br>
 
   <%= f.submit "Save" %>
-  
+
 <% end %>
+<%= @club.images.each do |blob| %>
+  <div style="height:100px; width:100px;">
+    <%= image_tag blob %>
+  </div>
+<% end %>
+
