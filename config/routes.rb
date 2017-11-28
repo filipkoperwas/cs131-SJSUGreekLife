@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :events
   resources :clubs
 
+  post 'delete_images' => 'clubs#delete_images', as: :delete_images
   get 'home_page/index'
   get 'club_page/index'
   get 'club_page/show'

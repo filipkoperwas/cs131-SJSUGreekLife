@@ -15,11 +15,6 @@ class ClubsController < ApplicationController
     if @club.update(club_params)
       if params[:club][:images] != nil
         @club.images.attach(params[:club][:images])
-      else
-        image = @club.images.first
-        if image
-          image.purge
-        end
       end
       redirect_to club_path(@club)
     else
@@ -31,10 +26,14 @@ class ClubsController < ApplicationController
     params.require(:club).permit(:name, :picture, :description)
   end
 
-  def myFunc(image)
-    if image
-      image.purge
+  def delete_images
+    @club = Club.find_by(id: params[:id])
+    @club.images.each do |image|
+      if image
+        image.purge
+      end
     end
+    redirect_to club_path(@club)
   end
-
+  
 end

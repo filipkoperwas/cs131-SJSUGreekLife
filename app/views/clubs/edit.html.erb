@@ -15,9 +15,10 @@ Edit <%= @club.name %>
   <%= f.submit "Save" %>
 
 <% end %>
-<%= @club.images.each do |blob| %>
+<%= @club.images.each do |image| %>
   <div style="height:100px; width:100px;">
-    <%= image_tag blob %>
+    <%= image_tag image %>
   </div>
 <% end %>
 
+<%= button_to 'Delete Images', controller:"clubs", action: "delete_images", id: @club %>

@@ -1,4 +1,4 @@
-module ClubPageHelper
+module ClubsHelper
   def check_if_officer
     if @user.acc_type == "club officer"
       return true
