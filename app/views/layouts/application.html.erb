@@ -59,8 +59,9 @@
 	        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">The Greek Organizations
 	        	<span class="caret"></span></a>
        	 		<ul class="dropdown-menu">
-          		<li><a href="#">Fraternities</a></li>
-          		<li><a href="#">Sororities</a></li>
+                <%= Club.all.each do |club| %>
+                  <li><a href="/clubs/<%= club.id%>"><p style="color: rgb(0,0,0);"><%= club.name%></p></a></li>
+                <% end %>
         	</ul>
       		</li>
 		  <li class=""><%= link_to 'Maps', maps_path %>
