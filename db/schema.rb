@@ -47,8 +47,16 @@ ActiveRecord::Schema.define(version: 2017_11_27_054049) do
   create_table "clubs", force: :cascade do |t|
     t.string "name"
     t.integer "layout"
-    t.text "description"
-    t.string "picture"
+    t.string "title_1"
+    t.text "description_1"
+    t.string "title_2"
+    t.text "description_2"
+    t.string "title_3"
+    t.text "description_3"
+    t.string "title_4"
+    t.text "description_4"
+    t.string "title_5"
+    t.text "description_5"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

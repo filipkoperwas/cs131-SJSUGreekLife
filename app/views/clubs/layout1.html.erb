@@ -1,4 +1,18 @@
 <style type="text/css" media="all">
+  h1 {
+    color: rgb(0,0,0);
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
   p {
     font-size: 1em;
     color: rgb(0,0,0);
@@ -29,27 +43,57 @@
     <%= image_tag @club.images.first %>
   <% end %>
 </div>
+<br><br>
 <div id="club_name">
-     <h1><%= @club.name %></h1>
+  <% if @club.name != "" %>
+    <h1><%= @club.name %></h1>
+  <% end %>
 </div>
-<div id="mission statement">
-  <p class="center"><%= @club.description %></p>
-</div>
+<br><br>
 
-<div class="row">
-  <div class="column">
-    <p><%= @club.description %></p>
-    <% if @club.images.first %>
-      <%= image_tag @club.images.first %>
-    <% end %>
+<% if @club.title_1 != "" %>
+  <div id="Section 1">
+    <h2><%= @club.title_1 %></h2>
+    <p class=left><%= @club.description_1 %></p>
   </div>
-  <div class="column">
-    <p><%= @club.description %></p>
+<% end %>
+
+<% if @club.title_2 != "" %>
+  <div id="Section 2">
+    <h2><%= @club.title_2 %></h2>
+    <p class=left><%= @club.description_2 %></p>
   </div>
-</div>
+<% end %>
+
+<% if @club.title_3 != "" %>
+  <div id="Section 3">
+    <h2><%= @club.title_3 %></h2>
+    <p class=left><%= @club.description_3 %></p>
+  </div>
+<% end %>
+
+<% if @club.title_4 != "" %>
+  <div id="Section 4">
+    <h2><%= @club.title_4 %></h2>
+    <p class=left><%= @club.description_4 %></p>
+  </div>
+<% end %>
+
+<% if @club.title_5 != "" %>
+  <div id="Section 5">
+    <h2><%= @club.title_5 %></h2>
+    <p class=left><%= @club.description_5 %></p>
+  </div>
+<% end %>
+
+<%= @club.images.offset(1).find_each do |image| %>
+  <%= image_tag url_for(image) %>
+<% end %>
+
 <div id="edit button">
   <% if current_user && current_user.acc_type == "club officer" %>
-    <%= link_to "Edit", edit_club_path(@club)  %>
+    <br>
+    <%= button_to "Edit", edit_club_path(@club), :method => :get  %>
   <% end %>
 
 </div>

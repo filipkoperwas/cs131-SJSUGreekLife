@@ -4,21 +4,47 @@ Edit <%= @club.name %>
   <%= f.label :name, "Club Name" %>
   <%= f.text_field :name %>
 
-  <%= f.label :picture, "Club Logo" %>
-  <%= f.text_field :picture %>
+  <%= f.label :layout, "Layout Number" %>
+  <%= f.text_field :layout %>
 
-  <%= f.label :description, "Mission Statement" %>
-  <%= f.text_field :description %>
+  <%= f.label :title_1, "Section 1 Title" %>
+  <%= f.text_field :title_1 %>
+
+  <%= f.label :description_1, "Information Segment 1"%>
+  <%= f.text_area :description_1 %>
+
+  <%= f.label :title_2, "Section 2 Title" %>
+  <%= f.text_field :title_2 %>
+  
+  <%= f.label :description_2, "Information Segment 2 " %>
+  <%= f.text_area :description_2 %>
+
+  <%= f.label :title_3, "Section 3 Title" %>
+  <%= f.text_field :title_3 %>
+
+  <%= f.label :description_3, "Information Segment 3" %>
+  <%= f.text_area :description_3 %>
+
+  <%= f.label :title_4, "Section Title 4" %>
+  <%= f.text_field :title_4 %>
+
+  <%= f.label :description_4, "Information Segment 4" %>
+  <%= f.text_area :description_4 %>
+
+  <%= f.label :title_5, "Section Title 5" %>
+  <%= f.text_field :title_5 %>
+
+  <%= f.label :description_5, "Information Segment 5" %>
+  <%= f.text_area :description_5 %>
+
 
   <%= f.file_field :images, multiple: true %><br>
+
 
   <%= f.submit "Save" %>
 
 <% end %>
-<%= @club.images.each do |image| %>
-  <div style="height:100px; width:100px;">
-    <%= image_tag image %>
-  </div>
-<% end %>
+
+<br>
 
 <%= button_to 'Delete Images', controller:"clubs", action: "delete_images", id: @club %>

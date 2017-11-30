@@ -1,0 +1,125 @@
+<style type="text/css" media="all">
+  h1 {
+    color: rgb(0,0,0);
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 1em;
+    color: rgb(0,0,0);
+  }
+  p.center {
+    text-align: center;
+  }
+  p.right {
+    text-align: right;
+  }
+  p.left {
+    text-align: left;
+  }
+
+  .column {
+    float: left;
+    width: 50.00%;
+    padding: 15px;
+  }
+  .row:after {
+    content: ""
+    display: table;
+    clear: both;
+</style>
+
+<div id="logo">
+  <% if @club.images.first %>
+    <%= image_tag @club.images.first %>
+  <% end %>
+</div>
+<br><br>
+<div id="club_name">
+     <h1><%= @club.name %></h1>
+</div>
+<br><br>
+<div class="row">
+  <div class="column">
+    <% if @club.title_1 != "" %>
+      <div id="Section 1">
+        <h2><%= @club.title_1 %></h2>
+        <p class=left><%= @club.description_1 %></p>
+      </div>
+    <% end %>
+
+    <% if @club.images.offset(1).first %>
+      <%= image_tag url_for(@club.images.offset(1).first) %>
+      <br>
+    <% end %>
+
+    <% if @club.title_2 != "" %>
+      <div id="Section 2">
+        <h2><%= @club.title_2 %></h2>
+        <p class=left><%= @club.description_2 %></p>
+      </div>
+    <% end %>
+
+    <% if @club.images.offset(2).first %>
+      <%= image_tag url_for(@club.images.offset(2).first) %>
+      <br>
+    <% end %>
+
+  </div>
+
+  <div class="column">
+    <% if @club.title_3 != "" %>
+      <div id="Section 3">
+        <h2><%= @club.title_3 %></h2>
+        <p class=left><%= @club.description_3 %></p>
+      </div>
+    <% end %>
+
+    <% if @club.images.offset(3).first %>
+      <%= image_tag url_for(@club.images.offset(3).first) %>
+      <br>
+    <% end %>
+    
+    <% if @club.title_4 != "" %>
+      <div id="Section 4">
+        <h2><%= @club.title_4 %></h2>
+        <p class=left><%= @club.description_4 %></p>
+      </div>
+    <% end %>
+
+    <% if @club.images.offset(4).first %>
+      <%= image_tag url_for(@club.images.offset(4).first) %>
+      <br>
+    <% end %>
+
+    <% if @club.title_5 != "" %>
+      <div id="Section 5">
+        <h2><%= @club.title_5 %></h2>
+        <p class=left><%= @club.description_5 %></p>
+      </div>
+    <% end %>
+
+    <% if @club.images.offset(5).first %>
+      <%= image_tag url_for(@club.images.offset(5).first) %>
+      <br>
+    <% end %>
+  </div>
+
+</div>
+
+
+<div id="edit button">
+  <% if current_user && current_user.acc_type == "club officer" %>
+    <%= button_to "Edit", edit_club_path(@club), :method => :get  %>
+  <% end %>
+
+</div>

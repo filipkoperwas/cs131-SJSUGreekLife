@@ -11,8 +11,7 @@
 Club.create(
   name:"Alpha Epsilon Pi",
   layout:'1',
-  description: "Alpha Epsilon Pi, otherwise referred to as ‘A E Pi’, was founded in 1913 at New York University by Charles C. Moskowitz and 10 other Jewish men. The chapter here at SJSU, was founded in 2013 and is one of our 18 chapters with a chapter facility located on 10th street. Alpha Epsilon Pi aspires to encourage the Jewish student to remain dedicated to Jewish ideals, values, and ethics and to prepare the student to be one of tomorrow's leaders so that he may help himself, his family, his community, and his people.",
-  picture: "aepi_logo.png",
+  description_1: "Alpha Epsilon Pi, otherwise referred to as ‘A E Pi’, was founded in 1913 at New York University by Charles C. Moskowitz and 10 other Jewish men. The chapter here at SJSU, was founded in 2013 and is one of our 18 chapters with a chapter facility located on 10th street. Alpha Epsilon Pi aspires to encourage the Jewish student to remain dedicated to Jewish ideals, values, and ethics and to prepare the student to be one of tomorrow's leaders so that he may help himself, his family, his community, and his people.",
 )
 
 
@@ -20,23 +19,32 @@ Club.create(
 Club.create(
   name:"Alpha Sigma Phi",
   layout:'1',
-  description: "Alpha Sigma Phi was founded on December 6, 1845 by three men with a purpose at Yale University. That purpose was “To Better The Man.” Each year Alpha Sigma Phi recruits new men with the goal of helping them reach their fullest potential by using its five virtues: Purity, Honor, Charity, Silence, and Patriotism. Alpha Sigma Phi was founded at SJSU in the fall of 2013, and continues to strive for their mission of being the co-curricular organization of choice. Those who join Alpha Sigma Phi will find not just friends, but brothers for life. Its members vehemently endeavor to help each other grow and mature not just in academics but in every possible sense.", 
-  picture: "asp_logo.png"
+  description_1: "Alpha Sigma Phi was founded on December 6, 1845 by three men with a purpose at Yale University. That purpose was “To Better The Man.” Each year Alpha Sigma Phi recruits new men with the goal of helping them reach their fullest potential by using its five virtues: Purity, Honor, Charity, Silence, and Patriotism. Alpha Sigma Phi was founded at SJSU in the fall of 2013, and continues to strive for their mission of being the co-curricular organization of choice. Those who join Alpha Sigma Phi will find not just friends, but brothers for life. Its members vehemently endeavor to help each other grow and mature not just in academics but in every possible sense.", 
 )
 
 Club.create(
   name:"Alpha Tau Omega",
   layout:'1',
-  description: "Alpha Tau Omega referred to as ‘A T O’, was founded in 1865 in Lexington, Virginia at the Virginia Military Institute. At SJSU, Alpha Tau Omega started as a different organization in 1926 and later affiliated with Alpha Tau Omega in 1950. Alpha Tau Omega is known as “America’s Leadership Development Fraternity”, and strives to instill leadership skills in all of their members. ATO provides a great opportunity for young men who are looking for a truly unique fraternity experience.",
-  picture: "ato_logo.png",
+  description_1: "Alpha Tau Omega referred to as ‘A T O’, was founded in 1865 in Lexington, Virginia at the Virginia Military Institute. At SJSU, Alpha Tau Omega started as a different organization in 1926 and later affiliated with Alpha Tau Omega in 1950. Alpha Tau Omega is known as “America’s Leadership Development Fraternity”, and strives to instill leadership skills in all of their members. ATO provides a great opportunity for young men who are looking for a truly unique fraternity experience.",
+)
+
+Club.create(
+  name:"Beta Theta Pi",
+  layout:'1',
+)
+User.create(
+  first_name: "CMPE",
+  last_name: "131",
+  password: "Password1",
+  acc_type: "club officer",
+  email: "cmpe131@example.com"
 )
 
 User.create(
-  first_name: "Bob",
-  last_name: "Dylan",
+  first_name: "Student",
+  last_name: "Example",
   password: "Password1",
-  acc_type: "club officer",
-  email: "bobbylan1@example.com"
+  acc_type: "student",
+  email: "student@example.com",
 )
-
 

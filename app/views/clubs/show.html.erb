@@ -11,7 +11,7 @@
 </div>
 <div id="edit button">
   <% if current_user && current_user.acc_type == "club officer" %>
-    <%= link_to "Edit", edit_club_path(@club)  %>
+    <%= button_to "Edit",  edit_club_path(@club), :method => :get  %>
   <% end %>
 
 </div>
